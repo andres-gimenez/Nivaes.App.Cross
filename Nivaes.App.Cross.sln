@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30404.54
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31512.422
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample", "Sample", "{8202DDB8-391D-4470-A64C-036F0BF2A61D}"
 EndProject
@@ -91,7 +91,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nivaes.App.Cross.Tv.Sample"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{2D4A33FD-E113-4179-B301-C9C383F1F17A}"
 	ProjectSection(SolutionItems) = preProject
+		.github\workflows\build_release.yaml = .github\workflows\build_release.yaml
 		.github\workflows\ci.yaml = .github\workflows\ci.yaml
+		.github\workflows\publish_release.yaml = .github\workflows\publish_release.yaml
 	EndProjectSection
 EndProject
 Global
