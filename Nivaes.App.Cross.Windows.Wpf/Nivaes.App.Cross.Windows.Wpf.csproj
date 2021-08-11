@@ -16,6 +16,11 @@
     <PackageId>Nivaes.App.Cross.Windows.Wpf</PackageId>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <AppxGeneratePriEnabled>false</AppxGeneratePriEnabled>
+    <AppxGeneratePrisForPortableLibrariesEnabled>false</AppxGeneratePrisForPortableLibrariesEnabled>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="Microsoft.WindowsAppSDK" />
   </ItemGroup>

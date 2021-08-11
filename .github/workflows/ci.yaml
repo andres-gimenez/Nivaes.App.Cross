@@ -187,8 +187,8 @@ jobs:
     #- name: Restore Windows
     #  run: dotnet restore ./Nivaes.App.Cross.Windows/
 
-    - name: Build Windows
-      run: dotnet build ./Nivaes.App.Cross.Windows/ --configuration Release
+    #- name: Build Windows
+    #  run: dotnet build ./Nivaes.App.Cross.Windows/ --configuration Release
 
     - name: Build Wpf
       run: dotnet build ./Nivaes.App.Cross.Windows.Wpf/ --configuration Release
