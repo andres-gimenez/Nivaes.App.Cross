@@ -30,7 +30,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Setup .NET Core 6.0.x
+    - name: Setup .NET Core
       uses: actions/setup-dotnet@v1 
       with:
         dotnet-version: ${{ env.net_core_version }}
@@ -58,10 +58,13 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Setup .NET Core 6.0.x
+    - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: ${{ env.net_core_version }}
+        source-url: https://nuget.pkg.github.com/Nivaes/index.json
+      env:
+        NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
     - name: Install workload
       shell: pwsh
@@ -87,7 +90,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Setup .NET Core 6.0.x
+    - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: ${{ env.net_core_version }}
@@ -161,7 +164,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Setup .NET Core 6.0.x
+    - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: ${{ env.net_core_version }} 
