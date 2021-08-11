@@ -135,8 +135,8 @@ jobs:
     #- name: Restore macOS
     #  run: dotnet restore ./Nivaes.App.Cross.macOS/
 
-    - name: Build App.Cross.macOS
-      run: dotnet build ./Nivaes.App.Cross.macOS/ --configuration Release
+    #- name: Build App.Cross.macOS
+    #  run: dotnet build ./Nivaes.App.Cross.macOS/ --configuration Release
 
     #- name: Restore watchOS
     #  run: dotnet restore ./Nivaes.App.Cross.watchOS/
