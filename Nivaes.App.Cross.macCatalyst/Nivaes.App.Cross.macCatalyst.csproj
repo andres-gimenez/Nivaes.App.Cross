@@ -4,15 +4,11 @@
 
   <PropertyGroup>
     <OutputType>Library</OutputType>
-    <!--<TargetFrameworks>net6.0-ios</TargetFrameworks>-->
-    <!--<TargetFrameworks Condition=" '$(OS)' != 'Windows_NT' ">$(TargetFrameworks);net6.0-maccatalyst</TargetFrameworks>-->
     <TargetFrameworks>net6.0-maccatalyst</TargetFrameworks>
     <RuntimeIdentifiers>maccatalyst-x64</RuntimeIdentifiers>
-    <!--<RuntimeIdentifier Condition="'$(TargetFramework)' == 'net6.0-ios'">ios-x64;iossimulator-x64</RuntimeIdentifier>-->
-    <!--<RuntimeIdentifier Condition="'$(TargetFramework)' == 'net6.0-maccatalyst'">maccatalyst-x64</RuntimeIdentifier>-->
 
-    <AssemblyName>Nivaes.App.Cross.macOS</AssemblyName>
-    <RootNamespace>Nivaes.App.Cross.macOS</RootNamespace>
+    <AssemblyName>Nivaes.App.Cross.maccatalyst</AssemblyName>
+    <RootNamespace>Nivaes.App.Cross.maccatalyst</RootNamespace>
 
     <Description>
       Nivaes.App.Cross is the .NET framework for cross-platform solutions, including Xamarin iOS, Xamarin Android, Windows and Mac.

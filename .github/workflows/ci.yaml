@@ -79,7 +79,7 @@ jobs:
 
   build-MacOs:
     needs: build
-    runs-on: macos-10.15
+    runs-on: macos-latest
 
     steps:
     - name: Dump GitHub context
@@ -104,17 +104,18 @@ jobs:
         dotnet workload install ios
         dotnet workload install macos
         dotnet workload install maccatalyst
+        dotnet workload install tvos
 
     - name: Install Xcode
       uses: devbotsxyz/xcode-select@v1
 
-    - name: configure vsmac xcode
-      run: |
-        set -x
-        mkdir -p ~/Library/Preferences/Xamarin
-        rm -f ~/Library/Preferences/Xamarin/Settings.plist
-        /usr/libexec/PlistBuddy -c "add :AppleSdkRoot string $(dirname $(dirname $(xcode-select -p)))" ~/Library/Preferences/Xamarin/Settings.plist || true
-        cat ~/Library/Preferences/Xamarin/Settings.plist || true
+    #- name: configure vsmac xcode
+    #  run: |
+    #    set -x
+    #    mkdir -p ~/Library/Preferences/Xamarin
+    #    rm -f ~/Library/Preferences/Xamarin/Settings.plist
+    #    /usr/libexec/PlistBuddy -c "add :AppleSdkRoot string $(dirname $(dirname $(xcode-select -p)))" ~/Library/Preferences/Xamarin/Settings.plist || true
+    #    cat ~/Library/Preferences/Xamarin/Settings.plist || true
    
     - name: Build App.Cross
       run: dotnet build ./Nivaes.App.Cross/ --configuration Release
@@ -144,8 +145,8 @@ jobs:
     #  run: msbuild ./Nivaes.App.Cross.watchOS/ /t:build
     #  #run: dotnet build ./Nivaes.App.Cross.watchOS/ --configuration Release
 
-    #- name: Restore tvOS
-    #  run: dotnet restore ./Nivaes.App.Cross.tvOS/
+    - name: Restore tvOS
+      run: dotnet restore ./Nivaes.App.Cross.tvOS/
 
     #- name: Build App.Cross.tvOS
     #  run: msbuild ./Nivaes.App.Cross.tvOS/ /t:build
