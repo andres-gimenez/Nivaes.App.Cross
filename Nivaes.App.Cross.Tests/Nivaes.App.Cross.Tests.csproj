@@ -1,7 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <Sdk Name="Microsoft.DotNet.PackageValidation" Version="1.0.0-rc.1.21367.3" />
-
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <TargetFrameworks>netstandard2.1;net5.0;net6.0</TargetFrameworks>
@@ -15,6 +13,10 @@ This package contains the 'Test Helpers' for Nivaes.App.Cross</Description>
 
   <ItemGroup>
     <PackageReference Include="xunit" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.DotNet.PackageValidation" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,7 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <Sdk Name="Microsoft.DotNet.PackageValidation" Version="1.0.0-rc.1.21367.3" />
-
   <PropertyGroup>
     <TargetFramework>net6.0-android</TargetFramework>
     <OutputType>Exe</OutputType>
@@ -17,6 +15,8 @@
     <!--<PackageReference Include="SQLitePCLRaw.lib.sqlcipher.android" Version="1.1.14" />-->
     <PackageReference Include="Xamarin.AndroidX.Arch.Core.Runtime" />
     <PackageReference Include="Xamarin.Essentials" />
+
+    <PackageReference Include="Microsoft.DotNet.PackageValidation" />
   </ItemGroup>
 
   <ItemGroup>

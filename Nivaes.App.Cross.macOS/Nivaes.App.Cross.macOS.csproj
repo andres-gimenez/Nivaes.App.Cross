@@ -1,7 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <Sdk Name="Microsoft.DotNet.PackageValidation" Version="1.0.0-rc.1.21367.3" />
-
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <TargetFrameworks Condition=" '$(OS)' != 'Windows_NT' ">$(TargetFrameworks);net6.0-macos</TargetFrameworks>
@@ -17,6 +15,10 @@
 
     <PackageId>Nivaes.App.Cross.macOS</PackageId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.DotNet.PackageValidation" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Nivaes.App.Cross\Nivaes.App.Cross.csproj" />

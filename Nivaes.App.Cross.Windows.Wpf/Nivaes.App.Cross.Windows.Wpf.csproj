@@ -1,7 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <Sdk Name="Microsoft.DotNet.PackageValidation" Version="1.0.0-rc.1.21367.3" />
-
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <TargetFrameworks>net5.0-windows;net6.0-windows</TargetFrameworks>
@@ -24,6 +22,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Nivaes.App.Cross\Nivaes.App.Cross.csproj" />
+
+    <PackageReference Include="Microsoft.DotNet.PackageValidation" />
   </ItemGroup>
 
   <ItemGroup>

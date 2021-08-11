@@ -1,7 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <Sdk Name="Microsoft.DotNet.PackageValidation" Version="1.0.0-rc.1.21367.3" />
-
   <PropertyGroup>
     <TargetFramework>net6.0-ios</TargetFramework>
     <RuntimeIdentifier>iossimulator-x64</RuntimeIdentifier>
@@ -10,6 +8,10 @@
     <RootNamespace>Nivaes.App.Cross.iOS.Sample</RootNamespace>
     <AssemblyName>Nivaes.App.Cross.iOS.Sample</AssemblyName>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.DotNet.PackageValidation" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\Nivaes.App.Cross.iOS\Nivaes.App.Cross.iOS.csproj" />

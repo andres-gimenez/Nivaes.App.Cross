@@ -1,7 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <Sdk Name="Microsoft.DotNet.PackageValidation" Version="1.0.0-rc.1.21367.3" />
-
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows10.0.18362.0</TargetFramework>
@@ -31,6 +29,8 @@
     <!--<PackageReference Include="Microsoft.ProjectReunion.Foundation" />
     <PackageReference Include="Microsoft.ProjectReunion.WinUI" />-->
     <Manifest Include="$(ApplicationManifest)" />
+
+    <PackageReference Include="Microsoft.DotNet.PackageValidation" />
   </ItemGroup>
 
   <ItemGroup>
