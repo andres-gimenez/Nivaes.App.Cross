@@ -18,6 +18,8 @@
   </PropertyGroup>
 
   <PropertyGroup>
+    <SDKIdentifier>Windows</SDKIdentifier>
+    <SDKVersion>10.0</SDKVersion>
     <AppxGeneratePriEnabled>false</AppxGeneratePriEnabled>
     <AppxGeneratePrisForPortableLibrariesEnabled>false</AppxGeneratePrisForPortableLibrariesEnabled>
     <AppxPackagingArchitecture>x64</AppxPackagingArchitecture>
