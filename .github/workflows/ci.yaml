@@ -153,9 +153,8 @@ jobs:
     - name: Restore tvOS
       run: dotnet restore ./Nivaes.App.Cross.tvOS/ 
 
-    #- name: Build App.Cross.tvOS
-    #  run: msbuild ./Nivaes.App.Cross.tvOS/ /t:build
-    #  #run: dotnet build ./Nivaes.App.Cross.tvOS/ --configuration Release
+    - name: Build App.Cross.tvOS
+      run: dotnet build ./Nivaes.App.Cross.tvOS/ --configuration Release
 
   build-Windows:
     needs: build
