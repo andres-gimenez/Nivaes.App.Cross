@@ -19,6 +19,7 @@
   <PropertyGroup>
     <AppxGeneratePriEnabled>false</AppxGeneratePriEnabled>
     <AppxGeneratePrisForPortableLibrariesEnabled>false</AppxGeneratePrisForPortableLibrariesEnabled>
+    <AppxPackagingArchitecture>x64</AppxPackagingArchitecture>
   </PropertyGroup>
 
   <ItemGroup>
