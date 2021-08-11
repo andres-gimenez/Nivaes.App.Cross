@@ -140,8 +140,8 @@ jobs:
     #- name: Restore macOS
     #  run: dotnet restore ./Nivaes.App.Cross.macOS/
 
-    #- name: Build App.Cross.macOS
-    #  run: dotnet build ./Nivaes.App.Cross.macOS/ --configuration Release
+    - name: Build App.Cross.macOS
+      run: dotnet build ./Nivaes.App.Cross.macOS/ --configuration Release
 
     #- name: Restore watchOS
     #  run: dotnet restore ./Nivaes.App.Cross.watchOS/
@@ -187,8 +187,8 @@ jobs:
     #- name: Restore Windows
     #  run: dotnet restore ./Nivaes.App.Cross.Windows/
 
-    #- name: Build Windows
-    #  run: dotnet build ./Nivaes.App.Cross.Windows/ --configuration Release
+    - name: Build Windows
+      run: dotnet build ./Nivaes.App.Cross.Windows/ --configuration Release
 
     - name: Build Wpf
       run: dotnet build ./Nivaes.App.Cross.Windows.Wpf/ --configuration Release
