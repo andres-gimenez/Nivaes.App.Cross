@@ -14,7 +14,7 @@ on:
     - 'Samples/**'
 
 env:
-    net_core_version: 6.0.100-preview.7.21371.16
+    net_core_version: 6.0.100-preview.7.21379.14
 
 jobs:
   build:
@@ -66,8 +66,7 @@ jobs:
     - name: Install workload
       shell: pwsh
       run: |
-        dotnet workload install maui-android
-        dotnet workload install microsoft-android-sdk-full
+        dotnet workload install android-aot
 
     - name: Build App.Cross
       run: dotnet build ./Nivaes.App.Cross/ --framework netstandard2.1 --configuration Release
@@ -99,12 +98,9 @@ jobs:
     - name: Install workload
       shell: pwsh
       run: |
-        dotnet workload install maui-ios
-        dotnet workload install maui-maccatalyst
-        dotnet workload install microsoft-ios-sdk-full
-        dotnet workload install microsoft-maccatalyst-sdk-full
-        dotnet workload install microsoft-macos-sdk-full
-        dotnet workload install microsoft-tvos-sdk-full
+        dotnet workload install ios
+        dotnet workload install macos
+        dotnet workload install maccatalyst
 
     - name: Install Xcode
       uses: devbotsxyz/xcode-select@v1
