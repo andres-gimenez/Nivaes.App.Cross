@@ -134,8 +134,8 @@ jobs:
     #- name: Restore macCatalyst
     #  run: dotnet restore ./Nivaes.App.Cross.macCatalyst/
 
-    #- name: Build App.Cross.macCatalyst  
-    #  run: dotnet build ./Nivaes.App.Cross.macCatalyst/ --configuration Release
+    - name: Build App.Cross.macCatalyst  
+      run: dotnet build ./Nivaes.App.Cross.macCatalyst/ --configuration Release --runtime maccatalystsimulator-x64 
 
     #- name: Restore macOS
     #  run: dotnet restore ./Nivaes.App.Cross.macOS/
