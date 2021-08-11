@@ -182,7 +182,7 @@ jobs:
       uses: microsoft/setup-msbuild@v1.0.2
 
     - name: Build App.Cross
-      run: dotnet build ./Nivaes.App.Cross/ --framework netstandard2.1 --configuration Release
+      run: dotnet build ./Nivaes.App.Cross/ --configuration Release
 
     #- name: Restore Windows
     #  run: dotnet restore ./Nivaes.App.Cross.Windows/
