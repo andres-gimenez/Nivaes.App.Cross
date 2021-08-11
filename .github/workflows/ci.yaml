@@ -141,7 +141,7 @@ jobs:
     #  run: dotnet restore ./Nivaes.App.Cross.macOS/
 
     - name: Build App.Cross.macOS
-      run: dotnet build ./Nivaes.App.Cross.macOS/ --configuration Release
+      run: dotnet build ./Nivaes.App.Cross.macOS/ --configuration Release --runtime iossimulator-x64
 
     #- name: Restore watchOS
     #  run: dotnet restore ./Nivaes.App.Cross.watchOS/
@@ -151,7 +151,7 @@ jobs:
     #  #run: dotnet build ./Nivaes.App.Cross.watchOS/ --configuration Release
 
     - name: Restore tvOS
-      run: dotnet restore ./Nivaes.App.Cross.tvOS/
+      run: dotnet restore ./Nivaes.App.Cross.tvOS/ 
 
     #- name: Build App.Cross.tvOS
     #  run: msbuild ./Nivaes.App.Cross.tvOS/ /t:build
