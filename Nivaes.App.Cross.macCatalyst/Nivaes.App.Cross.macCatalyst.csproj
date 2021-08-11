@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <TargetFrameworks>net6.0-maccatalyst</TargetFrameworks>
-    <RuntimeIdentifiers>maccatalystsimulator-x64;maccatalyst-x64;maccatalyst-arm64</RuntimeIdentifiers>
+    <RuntimeIdentifiers>maccatalyst-x64;maccatalyst-arm64</RuntimeIdentifiers>
 
     <AssemblyName>Nivaes.App.Cross.maccatalyst</AssemblyName>
     <RootNamespace>Nivaes.App.Cross.maccatalyst</RootNamespace>
