@@ -129,7 +129,7 @@ jobs:
     #  run: dotnet restore ./Nivaes.App.Cross.iOS/
 
     - name: Build App.Cross.iOS
-      run: dotnet build ./Nivaes.App.Cross.iOS/ --configuration Release
+      run: dotnet build ./Nivaes.App.Cross.iOS/ --configuration Release --runtime iossimulator-x64
 
     #- name: Restore macCatalyst
     #  run: dotnet restore ./Nivaes.App.Cross.macCatalyst/
