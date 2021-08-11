@@ -3,8 +3,7 @@
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <TargetFrameworks Condition=" '$(OS)' != 'Windows_NT' ">$(TargetFrameworks);net6.0-macos</TargetFrameworks>
-    <!--<RuntimeIdentifiers>osx-x64;osx-arm64</RuntimeIdentifiers>-->
-    <RuntimeIdentifiers>osx-x64</RuntimeIdentifiers>
+    <RuntimeIdentifiers>osx-x64;osx-arm64</RuntimeIdentifiers>
 
     <AssemblyName>Nivaes.App.Cross.macOS</AssemblyName>
     <RootNamespace>Nivaes.App.Cross.macOS</RootNamespace>
