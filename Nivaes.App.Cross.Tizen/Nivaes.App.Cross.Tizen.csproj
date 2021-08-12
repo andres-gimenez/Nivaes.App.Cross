@@ -3,7 +3,8 @@
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <TargetFrameworks>net6.0-tizen</TargetFrameworks>
-    <RuntimeIdentifiers>tizen.4.0.0-armel;tizen.5.0.0-armel</RuntimeIdentifiers>
+    <!--<RuntimeIdentifiers>tizen.4.0.0-armel;tizen.5.0.0-armel</RuntimeIdentifiers>-->
+    <MinimumPlatformVersion>6.5</MinimumPlatformVersion>
 
     <AssemblyName>Nivaes.App.Cross.Tizen</AssemblyName>
     <RootNamespace>Nivaes.App.Cross.Tizen</RootNamespace>
