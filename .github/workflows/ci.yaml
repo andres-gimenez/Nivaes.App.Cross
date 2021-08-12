@@ -70,7 +70,7 @@ jobs:
       #shell: pwsh
       run: |
         #dotnet workload install android-aot  --include-previews --ignore-failed-sources --verbosity
-        dotnet workload install android-aot  --verbosity
+        dotnet workload install android-aot  --verbosity detailed
 
     - name: Build App.Cross
       run: dotnet build ./Nivaes.App.Cross/ --configuration Release
