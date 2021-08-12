@@ -1,12 +1,12 @@
-﻿<!--<Project Sdk="MSBuild.Sdk.Extras">-->
-<Project Sdk="Tizen.NET.Sdk/1.1.5">
+﻿<Project Sdk="MSBuild.Sdk.Extras">
 
   <PropertyGroup>
     <OutputType>Library</OutputType>
-    <TargetFramework>tizen80</TargetFramework>
+    <TargetFrameworks>net6.0-tizen</TargetFrameworks>
+    <RuntimeIdentifiers>tizen.4.0.0-armel;tizen.5.0.0-armel</RuntimeIdentifiers>
 
-    <AssemblyName>Nivaes.App.Cross.Droid</AssemblyName>
-    <RootNamespace>Nivaes.App.Cross.Droid</RootNamespace>
+    <AssemblyName>Nivaes.App.Cross.Tizen</AssemblyName>
+    <RootNamespace>Nivaes.App.Cross.Tizen</RootNamespace>
 
     <Description>
       Nivaes.App.Cross is the .NET framework for cross-platform solutions, including Xamarin iOS, Xamarin Android, Windows and Mac.
