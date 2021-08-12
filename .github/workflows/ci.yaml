@@ -105,7 +105,7 @@ jobs:
       shell: pwsh
       run: |
         dotnet dev-certs https --trust
-        dotnet workload install tizen
+        dotnet workload install tizen --source https://www.nuget.org/packages/Samsung.NET.Sdk.Tizen.Manifest-6.0.100/6.5.100-preview.7.84
 
     - name: Build App.Cross
       run: dotnet build ./Nivaes.App.Cross/ --configuration Release
