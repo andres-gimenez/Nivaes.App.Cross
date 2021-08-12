@@ -69,7 +69,8 @@ jobs:
     - name: Install workload
       #shell: pwsh
       run: |
-        dotnet workload install android-aot
+        #dotnet workload install android-aot  --include-previews --ignore-failed-sources --verbosity
+        dotnet workload install android-aot  --verbosity
 
     - name: Build App.Cross
       run: dotnet build ./Nivaes.App.Cross/ --configuration Release
