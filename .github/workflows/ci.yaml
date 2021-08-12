@@ -103,7 +103,7 @@ jobs:
     - name: Install Tizzen
       shell: pwsh
       run: |
-        curl -Uri https://workload-bin.s3.ap-northeast-2.amazonaws.com/windows/Samsung.NET.Workload.Tizen.6.5.100-preview.7.84.msi -OutFile WorkloadTizen.msi
+        Invoke-WebRequest -Uri https://workload-bin.s3.ap-northeast-2.amazonaws.com/windows/Samsung.NET.Workload.Tizen.6.5.100-preview.7.84.msi -OutFile WorkloadTizen.msi
         msiexec.exe /I .\WorkloadTizen.msi /quiet 
 
     - name: Install workload
