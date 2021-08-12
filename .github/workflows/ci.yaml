@@ -72,10 +72,44 @@ jobs:
         dotnet workload install android-aot
 
     - name: Build App.Cross
-      run: dotnet build ./Nivaes.App.Cross/ --framework netstandard2.1 --configuration Release
+      run: dotnet build ./Nivaes.App.Cross/ --configuration Release
 
     - name: Build App.Cross.Droid 
       run: dotnet build ./Nivaes.App.Cross.Droid/ --configuration Release
+
+
+  build-Tizen:
+    needs: build
+    runs-on: windows-2019
+    #runs-on: ubuntu-20.04
+
+    steps:
+    - name: Dump GitHub context
+      env:
+        GITHUB_CONTEXT: ${{ toJson(github) }}
+      run: echo "$GITHUB_CONTEXT"
+
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: ${{ env.net_core_version }}
+        source-url: https://nuget.pkg.github.com/Nivaes/index.json
+      env:
+        NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+    - name: Install workload
+      shell: pwsh
+      run: |
+        dotnet workload install tizen
+
+    - name: Build App.Cross
+      run: dotnet build ./Nivaes.App.Cross/ --configuration Release
+
+    - name: Build App.Cross.Droid 
+      run: dotnet build ./Nivaes.App.Cross.Tizen/ --configuration Release
 
   build-MacOs:
     needs: build
