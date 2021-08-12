@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <TargetFrameworks>net6.0-ios</TargetFrameworks>
-    <RuntimeIdentifiers>iossimulator-x64;ios-x64;ios-arm64</RuntimeIdentifiers>
+    <RuntimeIdentifiers>iossimulator-x64;iossimulator-x86;ios-x64;ios-arm;ios-arm64</RuntimeIdentifiers>
 
     <AssemblyName>Nivaes.App.Cross.iOS</AssemblyName>
     <RootNamespace>Nivaes.App.Cross.iOS</RootNamespace>
