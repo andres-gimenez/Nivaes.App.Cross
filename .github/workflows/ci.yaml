@@ -69,7 +69,6 @@ jobs:
     - name: Install workload
       shell: pwsh
       run: |
-        #dotnet dev-certs https --trust
         dotnet workload install android-aot
 
     - name: Build App.Cross
@@ -101,17 +100,16 @@ jobs:
       env:
         NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
-    - name: Install workload
-      shell: pwsh
-      run: |
-        #dotnet dev-certs https --trust
-        dotnet workload install tizen --source https://www.nuget.org/packages/Samsung.NET.Sdk.Tizen.Manifest-6.0.100/6.5.100-preview.7.84
+    #- name: Install workload
+    #  shell: pwsh
+    #  run: |
+    #    dotnet workload install tizen
 
     - name: Build App.Cross
       run: dotnet build ./Nivaes.App.Cross/ --configuration Release
 
-    - name: Build App.Cross.Droid 
-      run: dotnet build ./Nivaes.App.Cross.Tizen/ --configuration Release
+    #- name: Build App.Cross.Droid 
+    #  run: dotnet build ./Nivaes.App.Cross.Tizen/ --configuration Release
 
   build-MacOs:
     needs: build
