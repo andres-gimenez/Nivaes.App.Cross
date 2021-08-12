@@ -21,13 +21,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <!--<PackageReference Include="Win2d.uwp" />
-    <PackageReference Include="Microsoft.VCRTForwarders.140" />
-    <PackageReference Include="Microsoft.WinUI" />
-    <PackageReference Include="Microsoft.Windows.CsWinRT" />-->
-    <PackageReference Include="Microsoft.ProjectReunion" />
-    <!--<PackageReference Include="Microsoft.ProjectReunion.Foundation" />
-    <PackageReference Include="Microsoft.ProjectReunion.WinUI" />-->
+    <PackageReference Include="Microsoft.WindowsAppSDK" />
+
     <Manifest Include="$(ApplicationManifest)" />
 
     <PackageReference Include="Microsoft.DotNet.PackageValidation" />
