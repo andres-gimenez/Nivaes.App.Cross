@@ -46,8 +46,8 @@ jobs:
 
   build-Android:
     needs: build
-    #runs-on: windows-2019
-    runs-on: ubuntu-20.04
+    runs-on: windows-2019
+    #runs-on: ubuntu-20.04
 
     steps:
     - name: Dump GitHub context
@@ -98,23 +98,23 @@ jobs:
       env:
         NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
-    - name: Install Tizzen
-      #shell: pwsh
-      run: |
-        git clone -b release/6.0.1xx-preview7 https://github.com/Samsung/Tizen.NET
-        cd Tizen.NET/workload
-        make install DESTDIR=/home/runner/
+    #- name: Install Tizzen
+    #  #shell: pwsh
+    #  run: |
+    #    git clone -b release/6.0.1xx-preview7 https://github.com/Samsung/Tizen.NET
+    #    cd Tizen.NET/workload
+    #    make install DESTDIR=/home/runner/
 
-    - name: Install workload
-      #shell: pwsh
-      run: |
-        dotnet workload install tizen
+    #- name: Install workload
+    #  #shell: pwsh
+    #  run: |
+    #    dotnet workload install tizen
 
     - name: Build App.Cross
       run: dotnet build ./Nivaes.App.Cross/ --configuration Release
 
-    - name: Build App.Cross.Droid 
-      run: dotnet build ./Nivaes.App.Cross.Tizen/ --configuration Release
+    #- name: Build App.Cross.Droid 
+    #  run: dotnet build ./Nivaes.App.Cross.Tizen/ --configuration Release
 
   build-MacOs:
     needs: build
