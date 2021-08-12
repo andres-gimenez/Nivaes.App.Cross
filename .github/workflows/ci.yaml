@@ -109,7 +109,8 @@ jobs:
       shell: pwsh
       run: |
         git clone -b release/6.0.1xx-preview7 https://github.com/Samsung/Tizen.NET
-        #cd Tizen.NET/workload
+        cd Tizen.NET/workload
+        make install
         #make install DESTDIR=.
 
     - name: Install workload
