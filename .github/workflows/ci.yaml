@@ -273,7 +273,9 @@ jobs:
       run: dotnet build ./Samples/Nivaes.App.Cross.Mobile.iOS.Sample/ --configuration Release --runtime iossimulator-x64
 
     - name: Build App.Cross.Mobile.Catalyst.Sample
-      run: dotnet build ./Samples/Nivaes.App.Cross.Mobile.Catalyst.Sample/ --configuration Release --runtime maccatalyst-x64
+      run: |
+        dotnet build ./Nivaes.App.Cross.macCatalyst/ --configuration Release --runtime maccatalyst-x64
+        dotnet build ./Samples/Nivaes.App.Cross.Mobile.Catalyst.Sample/ --configuration Release --runtime maccatalyst-x64
 
     - name: Build App.Cross.Desktop.macOS.Sample
       run: dotnet build ./Samples/Nivaes.App.Cross.Desktop.macOS.Sample/ --configuration Release --runtime osx-x64
