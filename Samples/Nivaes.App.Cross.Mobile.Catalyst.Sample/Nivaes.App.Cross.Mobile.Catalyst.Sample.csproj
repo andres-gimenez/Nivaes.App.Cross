@@ -2,12 +2,29 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0-maccatalyst</TargetFramework>
+    <TargetFrameworks>net6.0-maccatalyst</TargetFrameworks>
     <RuntimeIdentifiers>maccatalyst-x64;maccatalyst-arm64</RuntimeIdentifiers>
 
     <RootNamespace>Nivaes.App.Cross.Mobile.Catalyst.Sample</RootNamespace>
     <AssemblyName>Nivaes.App.Cross.Mobile.Catalyst.Sample</AssemblyName>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <None Remove="Assets.xcassets\AppIcon.appiconset\Icon1024.png" />
+    <None Remove="Assets.xcassets\AppIcon.appiconset\Icon120.png" />
+    <None Remove="Assets.xcassets\AppIcon.appiconset\Icon152.png" />
+    <None Remove="Assets.xcassets\AppIcon.appiconset\Icon167.png" />
+    <None Remove="Assets.xcassets\AppIcon.appiconset\Icon180.png" />
+    <None Remove="Assets.xcassets\AppIcon.appiconset\Icon20.png" />
+    <None Remove="Assets.xcassets\AppIcon.appiconset\Icon29.png" />
+    <None Remove="Assets.xcassets\AppIcon.appiconset\Icon40.png" />
+    <None Remove="Assets.xcassets\AppIcon.appiconset\Icon58.png" />
+    <None Remove="Assets.xcassets\AppIcon.appiconset\Icon60.png" />
+    <None Remove="Assets.xcassets\AppIcon.appiconset\Icon76.png" />
+    <None Remove="Assets.xcassets\AppIcon.appiconset\Icon80.png" />
+    <None Remove="Assets.xcassets\AppIcon.appiconset\Icon87.png" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.DotNet.PackageValidation" />
