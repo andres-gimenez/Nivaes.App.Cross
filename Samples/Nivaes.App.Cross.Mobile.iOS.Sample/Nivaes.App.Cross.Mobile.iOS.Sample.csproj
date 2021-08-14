@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0-ios</TargetFramework>
-    <RuntimeIdentifier>iossimulator-x64</RuntimeIdentifier>
+    <RuntimeIdentifiers>iossimulator-x64;iossimulator-x86;ios-x64;ios-arm;ios-arm64</RuntimeIdentifiers>
     <OutputType>Exe</OutputType>
 
     <RootNamespace>Nivaes.App.Cross.iOS.Sample</RootNamespace>
