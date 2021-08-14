@@ -69,7 +69,7 @@ jobs:
     - name: Install workload
       #shell: pwsh
       run: |
-        dotnet workload install android-aot  --include-previews --ignore-failed-sources --verbosity
+        dotnet workload install android-aot  --include-previews --ignore-failed-sources --verbosity detailed
         #dotnet workload install android-aot  --verbosity detailed
 
     #- name: Build App.Cross
@@ -103,7 +103,7 @@ jobs:
     - name: Install workload
       #shell: pwsh
       run: |
-        dotnet workload install android-aot  --include-previews --ignore-failed-sources --verbosity
+        dotnet workload install android-aot  --include-previews --ignore-failed-sources --verbosity detailed
         #dotnet workload install android-aot  --verbosity detailed
 
     - name: Build App.Cross
