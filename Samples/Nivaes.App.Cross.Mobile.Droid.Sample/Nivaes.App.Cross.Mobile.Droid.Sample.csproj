@@ -1,14 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0-android</TargetFramework>
+    <TargetFramework>net6.0-android30</TargetFramework>
     <OutputType>Exe</OutputType>
-    <!--<RuntimeIdentifiers>android-x86;android-x64;android-arm64</RuntimeIdentifiers>-->
-    <!--<RuntimeIdentifiers>linux-arm;linux-arm64;linux-x64</RuntimeIdentifiers>-->
+    <RuntimeIdentifiers>android-x86;android-x64;android-arm;android-arm64</RuntimeIdentifiers>
 
     <AssemblyName>Nivaes.App.Cross.Mobile.Droid.Sample</AssemblyName>
     <RootNamespace>Nivaes.App.Cross.Mobile.Droid.Sample</RootNamespace>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Java.Interop" />
+    <!--<Reference Include="Mono.Android" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />-->
+  </ItemGroup>
 
   <ItemGroup>
     <!--<PackageReference Include="SQLitePCLRaw.bundle_e_sqlcipher" Version="2.0.5-pre20210119130047" />-->

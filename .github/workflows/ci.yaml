@@ -106,7 +106,7 @@ jobs:
         dotnet workload install android-aot  --include-previews --ignore-failed-sources --verbosity detailed
         #dotnet workload install android-aot  --verbosity detailed
 
-    - name: Build App.Cross
+    - name: App.Cross.Mobile.Droid.Sample
       run: dotnet build ./Samples/Nivaes.App.Cross.Mobile.Droid.Sample/ --configuration Release
 
   build-Tizen:
@@ -200,7 +200,9 @@ jobs:
     #  run: dotnet restore ./Nivaes.App.Cross.iOS/
 
     - name: Build App.Cross.iOS
-      run: dotnet build ./Nivaes.App.Cross.iOS/ --configuration Release --runtime iossimulator-x64
+      run: |
+        dotnet build ./Nivaes.App.Cross.iOS/ --configuration Release --runtime iossimulator-x64
+        dotnet build ./Nivaes.App.Cross.iOS/ --configuration Release --runtime iossimulator-x86
 
     #- name: Restore macCatalyst
     #  run: dotnet restore ./Nivaes.App.Cross.macCatalyst/
@@ -264,11 +266,17 @@ jobs:
       with:
         xcode-version: latest-stable
 
-    - name: Build App.Cross.iOS
-      run: dotnet build ./Nivaes.App.Cross.iOS/ --configuration Release --runtime iossimulator-x64
+    #- name: Build App.Cross.iOS
+    #  run: dotnet build ./Nivaes.App.Cross.iOS/ --configuration Release --runtime iossimulator-x64
 
-    - name: Build App.Cross.iOS.Sample
+    - name: Build App.Cross.Mobile.iOS.Sample
       run: dotnet build ./Samples/Nivaes.App.Cross.Mobile.iOS.Sample/ --configuration Release --runtime iossimulator-x64
+
+    - name: Build App.Cross.Mobile.Catalyst.Sample
+      run: dotnet build ./Samples/Nivaes.App.Cross.Mobile.Catalyst.Sample/ --configuration Release --runtime maccatalyst-x64
+
+    - name: Build App.Cross.Desktop.macOS.Sample
+      run: dotnet build ./Samples/Nivaes.App.Cross.Desktop.macOS.Sample/ --configuration Release --runtime osx-x64
 
   build-Windows:
     needs: build

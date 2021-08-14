@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Library</OutputType>
-    <TargetFramework>net6.0-android30</TargetFramework>
+    <TargetFrameworks>net6.0-android30</TargetFrameworks>
     <!--<EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>-->
     <RuntimeIdentifiers>android-x86;android-x64;android-arm;android-arm64</RuntimeIdentifiers>
 
@@ -19,6 +19,36 @@
     </Description>
     <PackageId>Nivaes.App.Cross.Droid</PackageId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\drawable\splash_background.xml" />
+    <None Remove="Resources\layout\splash_screen.xml" />
+    <None Remove="Resources\mipmap-anydpi-v26\ic_launcher.xml" />
+    <None Remove="Resources\mipmap-anydpi-v26\ic_launcher_round.xml" />
+    <None Remove="Resources\mipmap-hdpi\ic_launcher.png" />
+    <None Remove="Resources\mipmap-hdpi\ic_launcher_foreground.png" />
+    <None Remove="Resources\mipmap-hdpi\ic_launcher_round.png" />
+    <None Remove="Resources\mipmap-mdpi\ic_launcher.png" />
+    <None Remove="Resources\mipmap-mdpi\ic_launcher_foreground.png" />
+    <None Remove="Resources\mipmap-mdpi\ic_launcher_round.png" />
+    <None Remove="Resources\mipmap-xhdpi\ic_launcher.png" />
+    <None Remove="Resources\mipmap-xhdpi\ic_launcher_foreground.png" />
+    <None Remove="Resources\mipmap-xhdpi\ic_launcher_round.png" />
+    <None Remove="Resources\mipmap-xxhdpi\ic_launcher.png" />
+    <None Remove="Resources\mipmap-xxhdpi\ic_launcher_foreground.png" />
+    <None Remove="Resources\mipmap-xxhdpi\ic_launcher_round.png" />
+    <None Remove="Resources\mipmap-xxxhdpi\ic_launcher.png" />
+    <None Remove="Resources\mipmap-xxxhdpi\ic_launcher_foreground.png" />
+    <None Remove="Resources\mipmap-xxxhdpi\ic_launcher_round.png" />
+    <None Remove="Resources\values\colors.xml" />
+    <None Remove="Resources\values\ic_launcher_background.xml" />
+    <None Remove="Resources\values\Ids.xml" />
+    <None Remove="Resources\values\MvxBindingAttributes.xml" />
+    <None Remove="Resources\values\MvxRecyclerViewBindingAttributes.xml" />
+    <None Remove="Resources\values\splashstyle.xml" />
+    <None Remove="Resources\values\strings.xml" />
+    <None Remove="Resources\values\styles.xml" />
+  </ItemGroup>
 
   <!--<ItemGroup>
     <None Include="Resources\*.cs" />

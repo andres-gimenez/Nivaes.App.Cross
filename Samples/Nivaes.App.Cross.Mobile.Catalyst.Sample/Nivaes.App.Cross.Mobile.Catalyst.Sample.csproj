@@ -2,11 +2,11 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0-ios</TargetFramework>
-    <RuntimeIdentifiers>iossimulator-x64;iossimulator-x86;ios-x64;ios-arm;ios-arm64</RuntimeIdentifiers>
+    <TargetFramework>net6.0-maccatalyst</TargetFramework>
+    <RuntimeIdentifiers>maccatalyst-x64;maccatalyst-arm64</RuntimeIdentifiers>
 
-    <RootNamespace>Nivaes.App.Cross.iOS.Mobile.Sample</RootNamespace>
-    <AssemblyName>Nivaes.App.Cross.iOS.Mobile.Sample</AssemblyName>
+    <RootNamespace>Nivaes.App.Cross.Mobile.Catalyst.Sample</RootNamespace>
+    <AssemblyName>Nivaes.App.Cross.Mobile.Catalyst.Sample</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
