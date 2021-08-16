@@ -44,8 +44,8 @@ jobs:
     #- name: Test
     #  run: dotnet test --configuration Release --no-build --verbosity normal
 
-    - name: Test
-      run: dotnet test Nivaes.App.Cross.UnitTest --configuration Release --verbosity normal
+    #- name: Test
+    #  run: dotnet test Nivaes.App.Cross.UnitTest --configuration Release --verbosity normal
 
   build-Android:
     needs: build
@@ -78,8 +78,8 @@ jobs:
     #- name: Build App.Cross
     #  run: dotnet build ./Nivaes.App.Cross/ --configuration Release
 
-    #- name: Build App.Cross.Droid 
-    #  run: dotnet build ./Nivaes.App.Cross.Droid/ --configuration Release
+    - name: Build App.Cross.Droid 
+      run: dotnet build ./Nivaes.App.Cross.Droid/ --configuration Release
 
   build-Android-Samples:
     needs: build-Android
