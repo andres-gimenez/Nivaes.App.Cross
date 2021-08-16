@@ -78,8 +78,8 @@ jobs:
     #- name: Build App.Cross
     #  run: dotnet build ./Nivaes.App.Cross/ --configuration Release
 
-    - name: Build App.Cross.Droid 
-      run: dotnet build ./Nivaes.App.Cross.Droid/ --configuration Release
+    #- name: Build App.Cross.Droid 
+    #  run: dotnet build ./Nivaes.App.Cross.Droid/ --configuration Release
 
   build-Android-Samples:
     needs: build-Android
