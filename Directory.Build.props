@@ -23,18 +23,18 @@
     <BaseIntermediateOutputPath>$(RepoRoot)Artifacts\$(Configuration)\obj\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
   </PropertyGroup>-->
 
-  <!--<PropertyGroup>
+  <PropertyGroup>
     <SolutionDirPath Condition=" '$(SolutionDir)' != '' ">$(SolutionDir)ArtifactsVS\</SolutionDirPath>
     <SolutionDirPath Condition=" '$(SolutionDir)' == '' ">$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)'))Artifacts\</SolutionDirPath>
 
-    --><!-- Output paths --><!--
+     <!--Output paths--> 
     <BaseIntermediateOutputPath>$(SolutionDirPath)obj\$(Configuration)\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
     <IntermediateOutputPath>$(SolutionDirPath)obj\$(Configuration)\$(MSBuildProjectName)\</IntermediateOutputPath>
     <MSBuildProjectExtensionsPath>$(IntermediateOutputPath)\</MSBuildProjectExtensionsPath>
     <OutputPath>$(SolutionDirPath)bin\$(MSBuildProjectName)\</OutputPath>
     <OutDir>$(OutputPath)</OutDir>
     <DocumentationFile>$(SolutionDirPath)doc\$(Configuration)\$(MSBuildProjectName).xml</DocumentationFile>
-  </PropertyGroup>-->
+  </PropertyGroup>
 
 
   <PropertyGroup>
