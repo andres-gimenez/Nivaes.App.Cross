@@ -44,6 +44,9 @@ jobs:
     #- name: Test
     #  run: dotnet test --configuration Release --no-build --verbosity normal
 
+    - name: Test
+      run: dotnet test Nivaes.App.Cross.UnitTest --configuration Release --verbosity normal
+
   build-Android:
     needs: build
     runs-on: windows-2019
