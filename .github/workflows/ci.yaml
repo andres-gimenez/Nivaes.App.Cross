@@ -14,7 +14,7 @@ on:
     #- 'Samples/**'
 
 env:
-    net_core_version: 6.0.100-rc.1.21414.1
+    net_core_version: 6.0.0-rc.2.21420.10
 
 jobs:
   build:
