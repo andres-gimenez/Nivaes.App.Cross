@@ -75,6 +75,11 @@ jobs:
         dotnet workload install android-aot  --include-previews --ignore-failed-sources --verbosity detailed
         #dotnet workload install android-aot  --verbosity detailed
 
+    - uses: actions/setup-java@v2
+      with:
+        distribution: 'temurin'
+        java-version: '11'
+
     #- name: Build App.Cross
     #  run: dotnet build ./Nivaes.App.Cross/ --configuration Release
 
